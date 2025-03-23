@@ -1,0 +1,11 @@
+Question1: If you create a constructor method to build a DVD by title then create a constructor method to build a DVD by category. Does JAVA allow you to do this?
+Answer: Yes, JAVA allow user to have more than 1 constructor method with different parameter list. As well as in the DigitalVideosDics.java file, I have 4 constructor with the same name but different in parameter list.
+
+Question2: What do you prefer in this case: passing an array or an arbitrary number of arguments?
+Answer:I would prefer using varargs (DigitalVideoDisc... dvds) instead of an array parameter because it allows you to pass a variable number of arguments. It is more flexible and easier to use in practice.
+
+Question3: After the call of swap(jungleDVD, cinderellaDVD), why does the title of these two objects still remain?
+Answer: In Java, when you pass parameters to a method, they are passed by value, even if they are objects. This means that when you call swap(jungleDVD, cinderellaDVD), the actual parameters (object references) are copied into the method. However, changes to these references inside the swap method do not affect the original references outside because you are only modifying the copies of the references, not the original objects. Therefore, the jungleDVD and cinderellaDVD objects outside the method remain unchanged
+
+Question4: •  After the call of changeTitle(jungleDVD, cinderellaDVD.getTitle()), why is the title of the JungleDVD changed?
+Answer: In the changeTitle method, the jungleDVD object is actually modified because you call the setTitle() method on the dvd object. When you call dvd.setTitle(title), you change the title of the object that the dvd reference is pointing to. However, when you create a new object (new DigitalVideoDisc(oldTitle)), you only change the reference inside the method and not the object outside. The title of jungleDVD is changed because the setTitle() method modifies the property of the object, not the reference itself.
