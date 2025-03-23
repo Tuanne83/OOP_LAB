@@ -14,7 +14,23 @@ public class AimsProject {
 
     DigitalVideoDisc dvd3 = new DigitalVideoDisc("Aladin", "Animation",  18.99f);
     anOrder.addDigitalVideoDisc(dvd3);
-
+/* 14.1 ??Add a single DVD
+        anOrder.addDigitalVideoDisc(dvd1);
+        
+        // Add multiple DVDs at once using the overloaded method
+        DigitalVideoDisc[] dvdArray = { dvd2, dvd3 };
+        anOrder.addDigitalVideoDisc(dvdArray);
+ * 
+ */
+/*
+ * 14.2
+ * // Add two DVDs at once using the overloaded method
+        anOrder.addDigitalVideoDisc(dvd1, dvd2);
+        
+        // Print total cost of the items in the cart
+        System.out.println("Total Cost is: ");
+        System.out.println(anOrder.totalCost());
+ */
     //Print total cost of the items in the cart
     System.out.println("Total Cost is: " + anOrder.totalCost());
     anOrder.removeDigitalVideoDisc(dvd1);
