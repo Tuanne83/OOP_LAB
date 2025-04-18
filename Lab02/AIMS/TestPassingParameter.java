@@ -1,4 +1,4 @@
-package Lab02;
+package Lab02.AIMS;
 
 public class TestPassingParameter {
     public static void main(String[] args) {

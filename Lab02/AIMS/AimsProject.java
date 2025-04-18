@@ -1,4 +1,4 @@
-package Lab02;
+package Lab02.AIMS;
 
 public class AimsProject {
     public static void main(String[] args) {

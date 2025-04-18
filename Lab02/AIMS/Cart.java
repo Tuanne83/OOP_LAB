@@ -1,4 +1,4 @@
-package Lab02;
+package Lab02.AIMS;
 
 import java.util.ArrayList;
 import java.util.List;
